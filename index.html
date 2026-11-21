@@ -1,21 +1,90 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pixelnotic Interactive</title>
+
+    <style>
+        body {
+            background: #0b0f14;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 40px;
+        }
+
+        .logo {
+            font-size: 4rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+
+            background: linear-gradient(
+                90deg,
+                #00ffff,
+                #00ff88,
+                #ffff00,
+                #ff66ff,
+                #00ffff
+            );
+
+            background-size: 300% 100%;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+
+            animation: wave 6s linear infinite;
+        }
+
+        @keyframes wave {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            100% {
+                background-position: 300% 50%;
+            }
+        }
+
+        .subtitle {
+            color: #cfcfcf;
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            color: #00ffff;
+        }
+
+        .projects {
+            font-size: 1.2rem;
+            line-height: 2;
+            color: white;
+        }
+
+        .footer {
+            margin-top: 30px;
+            color: #888;
+        }
+    </style>
 </head>
 <body>
-    <h1>Pixelnotic Interactive</h1>
 
-    <p>Independent Game Development Studio</p>
+    <h1 class="logo">Pixelnotic Interactive</h1>
+
+    <p class="subtitle">
+        Independent Game Development Studio
+    </p>
 
     <h2>Current Projects</h2>
 
-    <ul>
-        <li>Pulse Drift</li>
-        <li>Toad Rage</li>
-        <li>Jumpy Bro</li>
-    </ul>
+    <div class="projects">
+        <div>Pulse Drift</div>
+        <div>Toad Rage</div>
+        <div>Jumpy Bro</div>
+    </div>
 
-    <p>Website under construction.</p>
+    <p class="footer">
+        Website under construction.
+    </p>
+
 </body>
 </html>
